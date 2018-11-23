@@ -1,0 +1,38 @@
+body {
+    font-family: arial;
+    margin: 0;
+}
+
+nav {
+    background: orange;
+    padding: 20px 10px;
+}
+
+main,
+header {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 10px;
+    color: #333;
+}
+
+nav li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+nav a {
+    color: brown;
+    font-size: 18px;
+    background: rgba(255, 255, 255);
+    width: 70px;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.bio-paragrafo {
+    font-style: italic;
+    color: darkgrey;
+}

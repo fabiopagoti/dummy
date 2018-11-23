@@ -1,0 +1,100 @@
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>Minha App</title>
+			
+		<link rel="stylesheet" type="text/css" href="./styles.css">	
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<script>
+		function formatarBio(){
+			var biografia = $("div"); //  seletores
+			// biografia.css({
+			// 	"font-style": "italic",
+			//   color: "darkgrey"
+			// });
+			
+			biografia.fadeIn( {
+				duration : 2000,
+				complete: function() {
+			    var paragrafos = $("p");
+				paragrafos.addClass("bio-paragrafo");
+			
+			  }
+			});
+			
+		}
+		
+		window.onload = function(){
+			console.log("Página carregada");
+			$("#formatador").on("click", formatarBio);
+		}
+		</script>
+		
+	</head>
+	
+	<body>
+		 <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/cv.html">CV</a></li>
+                <li><a href="/apps">Apps</a></li>
+            </ul>
+        </nav>
+              <header>
+            <h1>Fábio Pagoti</h1>
+        </header>
+        <main>
+        	<button id="formatador">Exibir</button>
+        	<div id="bio" hidden="true" >
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc euismod cursus ipsum, non placerat mauris molestie non. 
+				Nam sed orci eu tellus maximus vulputate pharetra vel ante. Vestibulum dui quam, gravida ac tortor ut, sodales 
+				blandit massa. Nam at est pharetra, mattis libero laoreet, aliquam tellus. Nullam aliquam nisl sed libero consequat, 
+				non sodales lectus blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis 
+				egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce 
+				vestibulum sem augue, eget viverra ligula feugiat quis. Donec eu mattis nunc. Ut erat arcu, porttitor a accumsan eu, 
+				elementum sit amet libero. Phasellus ligula erat, iaculis ac sagittis quis, eleifend ac libero. Duis tincidunt elit 
+				id suscipit ultrices. Etiam at lectus ipsum. In eleifend auctor mi, eu sagittis velit aliquet ac. Donec a velit id 
+				odio bibendum dapibus.
+				</p>
+				<p>
+					Nulla finibus blandit arcu id venenatis. In in congue tortor, id euismod diam. Quisque lacinia turpis ut justo 
+				suscipit posuere. Sed pulvinar diam eget lectus dignissim semper. Sed sit amet sem lobortis ipsum convallis varius. 
+				Etiam non urna sed dolor ultricies pellentesque at ut tortor. Donec mollis suscipit nisi, non rutrum lectus efficitur 
+				vitae. Proin mattis at ipsum vel faucibus. Aliquam ac nunc tellus. Curabitur elit turpis, semper luctus sagittis vel, 
+				facilisis nec nibh. Nam a molestie turpis. Ut id dapibus mauris. Sed in finibus leo.
+				</p>
+				<p>
+					Cras malesuada turpis ut sodales tristique. Mauris feugiat diam eleifend nibh tincidunt ultricies. Nulla non dui 
+				egestas, porttitor erat eu, tincidunt nulla. Mauris porttitor egestas felis ac semper. Praesent eu libero dui. 
+				Aliquam erat volutpat. Sed porttitor non sem vel auctor. Nam ex justo, placerat quis urna sit amet, pretium convallis 
+				augue. Mauris sodales dapibus turpis, sit amet lacinia ex faucibus a. Ut sed sapien sit amet tortor fermentum 
+				rhoncus. Cras metus tortor, eleifend vel tortor vitae, viverra fermentum orci. Ut semper dolor non leo facilisis 
+				commodo. Sed mollis faucibus semper. Proin vitae elementum dui, ut condimentum ipsum. Pellentesque fermentum ligula 
+				ac dictum convallis.
+				</p>
+				<p>
+					Sed vulputate lobortis tortor nec tristique. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus 
+				et malesuada fames ac turpis egestas. Vivamus lacinia ex augue, a dignissim dolor molestie iaculis. Praesent ut odio 
+				cursus, interdum libero eget, rhoncus eros. Nunc mollis sed justo in elementum. Nunc suscipit purus vel neque 
+				pharetra posuere. Aenean tincidunt tincidunt eros. Aliquam non magna vitae leo sagittis aliquam sit amet vel lacus. 
+				Duis malesuada lacus varius faucibus egestas. Donec vel molestie lectus. Curabitur mattis suscipit feugiat. Cras a 
+				dapibus justo, a semper neque. Proin lorem est, pretium quis condimentum id, euismod in tellus.
+				</p>
+				<p>
+					Nam tortor orci, aliquet faucibus aliquet vel, posuere vitae eros. Proin congue quam a imperdiet convallis. Lorem 
+				ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula congue ex, id pretium massa. Aenean libero 
+				nisi, suscipit id tellus vestibulum, pharetra dignissim augue. Praesent interdum arcu quis elit aliquam ornare. Proin 
+				id odio blandit, condimentum nisi scelerisque, lacinia purus. Donec sed eros nisi. Integer libero elit, dignissim in 
+				sem at, auctor condimentum dui. Vivamus nec dignissim augue. Cras id efficitur nibh, quis egestas mi. Proin eu 
+				bibendum nunc.
+				</p>
+        	</div>
+            
+        </main>
+	</body>
+	
+</html>
